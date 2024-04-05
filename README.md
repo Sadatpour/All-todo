@@ -7,10 +7,9 @@ Todo project created with HTML / CSS and JS
 Added todo's edit section - We can editing title of todo in this update
 
 
+             S.Mojtaba Sadatpour  (Moji)             
+  --------------------------------------------------  
+   e-mail: sadatpour.web@gmail.com | git: Sadatpour   
+  -------------------------------------------------- 
 
-#####     #####  ----------------------------------------------
-## ##     ## ##              *    *  By: Moji                 - 
-##  ##   ##  ##  #######  ###### ##  S.Mojtaba Sadatpour      -
-##   ## ##   ##  ##   ##    ##   ##  sadatpour.web@gmail.com  -
-##    ###    ##  ##   ##    ##   ##  Git:Sadatpour            - 
-##    ###    ##  #######  ####   ##  -------------------------- 
+
