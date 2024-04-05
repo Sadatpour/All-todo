@@ -1,4 +1,4 @@
-# All-to-do by Moji
+# All-todo by Moji
 
 Todo project created by HTML / CSS/ JS | by Moji
 
