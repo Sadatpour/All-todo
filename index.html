@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=JavaS, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>All-to-do by Moji</title>
+  </head>
+  <body>
+    <div class="backdrop hidden" dir="rtl">
+      <div class="modal">
+        <div class="modal__header">
+          <p>ویرایش فعالیت</p>
+          <button class="close-modal">❌</button>
+        </div>
+        <div class="modal__content">
+          <label for="edit-todo">عنوان فعالیت</label>
+          <input type="text" name="edit-todo" id="edit-todo" />
+        </div>
+        <div class="modal__actions">
+          <button class="btn btn--primary close-modal" id="update-todo">
+            اصلاح میکنم
+          </button>
+          <button class="btn btn--outline close-modal">منصرف شدم</button>
+        </div>
+      </div>
+    </div>
+    <header class="todo-header">
+      <img src="./assets/img/to-do.png" alt="" />
+      <h1>چک لیست فعالیت های من</h1>
+    </header>
+    <section class="container">
+      <div class="form-container">
+        <form class="todo-form">
+          <input
+            type="text"
+            class="todo-input"
+            placeholder="نام فعالیت را وارد کنید"
+          />
+          <button value="submit" type="submit" class="todo-button">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </form>
+        <div class="select">
+          <select name="todos" id="" class="filter-todos">
+            <option value="all">همه فعالیت ها</option>
+            <option value="completed">کامل شده</option>
+            <option value="uncompleted">کامل نشده</option>
+          </select>
+        </div>
+        <div class="sort">
+          <select name="todos" id="" class="sort-todos">
+            <option value="all">مرتب سازی</option>
+            <option value="completed">تاریخ - نزولی</option>
+            <option value="uncompleted">تاریخ - صعودی</option>
+            <option value="uncompleted">به ترتیب حروف الفبا</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="todolist-container">
+      <ul class="todolist"></ul>
+    </section>
+    <script src="./js/app.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
+
+<!-- 
+####      #####  -------------------------------------------
+## ##     ## ##              *    *  By: Moji               
+##  ##   ##  ##  ######  ###### ##  S.Mojtaba Sadatpour     
+##   ## ##   ##  ##  ##    ##   ##  sadatpour.web@gmail.com 
+##    ###    ##  ##  ##    ##   ##  Git:Sadatpour           
+##    ###    ##  ######  ####   ##  www.sadatpour.com       
+------------------------------------------------------------
+-->

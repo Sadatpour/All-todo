@@ -1,0 +1,184 @@
+/*  Css reset */
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background-color: var(--color-body-bg);
+  font-family: Vazir, Arial, sans-serif;
+}
+/*  Font Faces  */
+@font-face {
+  font-family: "Vazir";
+  src: url(/assets/fonts/Vazir-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vazir";
+  src: url(/assets/fonts/Vazir-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vazir";
+  src: url(/assets/fonts/Vazir-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vazir";
+  src: url(/assets/fonts/Vazir-Black.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+/*  Variable Css  */
+:root {
+  --color-primary: #d9d7d7;
+  --color-secondary: #efefef;
+  --color-bg-btn: #321279;
+  --color-third: #fe28a2;
+  --color-body-bg: #05052e;
+  --color-text: #00a693;
+  --color-link: #c81d11;
+  --color-white: #fff;
+  --color-black: #000;
+}
+/*  Object Oriented Css  */
+body {
+  color: var(--color-white);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  margin: 2rem 0;
+}
+.form-container {
+  display: flex;
+  gap: 1.2rem;
+}
+.todo-form {
+  margin: 0 1.1rem;
+}
+.todo-header {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+}
+.todo-header img {
+  width: 2.2rem;
+  margin: 0 1rem;
+}
+.container .form-container .todo-form .todo-input {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-text);
+  border-radius: 0 10px 10px 0;
+  width: 350px;
+  height: 40px;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.container .form-container .todo-form .todo-button {
+  background-color: var(--color-bg-btn);
+  color: var(--color-secondary);
+  height: 45px;
+  width: 45px;
+  border-radius: 10px 0 0 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.select {
+  margin: 0 1rem;
+  height: 45px;
+}
+
+.container .select .filter-todos {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-primary);
+  margin: 0.4rem 0;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  padding: 0 1rem;
+}
+.sort {
+  margin: 0 1rem;
+  height: 45px;
+}
+
+.container .sort .sort-todos {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-primary);
+  margin: 0.4rem 0;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  padding: 0 1rem;
+}
+.todolist-container .todolist {
+  margin: 2rem 0;
+}
+.todolist-container .todolist .todo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: stretch;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  width: 767px;
+  height: 40px;
+  border: 1px solid var(--color-text);
+  border-radius: 10px;
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+.todolist-container .todolist .todo p {
+  grid-column: 1 / span 3;
+}
+.todolist-container .todolist .todo .todo__createdAt {
+  text-align: center;
+}
+.todolist-container .todolist .todo .todo__action {
+  grid-column: 5 / span 2;
+  text-align: center;
+}
+.todolist-container .todolist .todo .todo__action button i {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+}
+.todolist-container .todolist .todo .todo__action .todo__check i {
+  color: var(--color-text);
+}
+.todolist-container .todolist .todo .todo__action .todo__edit i {
+  color: var(--color-primary);
+}
+.todolist-container .todolist .todo .todo__action .todo__remove i {
+  color: var(--color-link);
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: var(--color-third);
+}
+button {
+  border: none;
+  outline: 0;
+}
+button > i {
+  pointer-events: none;
+}
+
+/* ####      #####  ------------------------------------------- */
+/* ## ##     ## ##              *    *  By: Moji                */
+/* ##  ##   ##  ##  ######  ###### ##  S.Mojtaba Sadatpour      */
+/* ##   ## ##   ##  ##  ##    ##   ##  sadatpour.web@gmail.com  */
+/* ##    ###    ##  ##  ##    ##   ##  Git:Sadatpour            */
+/* ##    ###    ##  ######  ####   ##  www.sadatpour.com        */
+/* ------------------------------------------------------------ */
