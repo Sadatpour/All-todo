@@ -17,24 +17,7 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "Vazir";
-  src: url(/assets/fonts/Vazir-Bold.woff) format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Vazir";
-  src: url(/assets/fonts/Vazir-Medium.woff) format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Vazir";
-  src: url(/assets/fonts/Vazir-Black.woff) format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
+
 /*  Variable Css  */
 :root {
   --color-primary: #d9d7d7;
@@ -45,7 +28,6 @@ html {
   --color-text: #00a693;
   --color-link: #c81d11;
   --color-white: #fff;
-  --color-black: #000;
 }
 /*  Object Oriented Css  */
 body {
@@ -174,7 +156,6 @@ button {
 button > i {
   pointer-events: none;
 }
-
 
 /* ####      #####  ------------------------------------------- */
 /* ## ##     ## ##              *    *  By: Moji                */
