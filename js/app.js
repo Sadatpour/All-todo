@@ -1,6 +1,5 @@
 //? Global Variables
 let filterValue = "all";
-
 //? selecting section
 const todoInput = document.querySelector(".todo-input");
 const todoForm = document.querySelector(".todo-form");
@@ -25,10 +24,11 @@ selectFilter.addEventListener("change", (e) => {
   filterValue = e.target.value;
   filterTodos();
 });
+
 //? functions
 function addNewTodo(e) {
   e.preventDefault();
-  if (!todoInput.value) return alert("لطفا یک فعالیت وارد کنید!");
+  if (!todoInput.value) return alert("لطفا نام فعالیت را وارد کنید!");
   const newTodo = {
     id: Date.now(),
     createdAt: new Date().toISOString(),
@@ -72,7 +72,6 @@ function createTodos(todos) {
   checkBtns.forEach((btn) => btn.addEventListener("click", doneTodo));
 }
 function filterTodos() {
-  // const filter = e.target.value;
   const todos = getAllTodos();
   switch (filterValue) {
     case "all": {
@@ -130,7 +129,6 @@ function findOneTodo(id) {
   const todo = todos.find((t) => t.id === id);
   return todo;
 }
-
 let todoToEditId;
 const editTodoInput = document.querySelector("#edit-todo");
 
